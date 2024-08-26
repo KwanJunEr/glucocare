@@ -5,7 +5,7 @@ import { BiSolidBell } from 'react-icons/bi';
 
 const Navbar = () => {
   return (
-    <div className='w-full flex flex-row bg-blue-1 py-2 px-6 justify-between items-center z-50 shadow-sm max-sm:py-2 opacity-85'>
+    <div className='w-full flex flex-row bg-white py-2 px-6 justify-between items-center z-50 shadow-md max-sm:py-2 opacity-85'>
       <div className='flex flex-row items-center'>
         <Link href={'/'}>
           <Image
