@@ -84,8 +84,29 @@ export default function Home() {
            
           </Card>
 
+    
+      </div>
+
+      <div className="py-2 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-5">
+    
+          <Card
+            hoverable
+            title="Daily Health Checking"
+            extra={<Button>Add Reminder</Button>}
+            className="md:w-[800px] w-full"
+          >
+           
+          </Card>
+
       
-       
+          <Card
+            hoverable
+            title="Daily Health Checking"
+            extra={<Button>Add Reminder</Button>}
+            className="md:w-[800px] w-full"
+          >
+           
+          </Card>
       </div>
     </div>
   );
