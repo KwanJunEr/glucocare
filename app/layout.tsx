@@ -53,8 +53,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <AntdRegistry>
           <Layout className="h-screen">
-            <Header className="flex justify-between w-full !bg-sky-50 px-4">
-              <div className="flex justify-between">
+            <Header className="flex justify-between h-20 w-full !bg-sky-50 px-4">
+              <div className="flex justify-between h-full items-center">
               <div className="flex">
                 <Link href={'/'} className="flex items-center">
                   <Image
