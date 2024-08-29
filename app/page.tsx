@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 
-import { Button, Card } from "antd";
+import { Button, Card, Badge } from "antd";
 
 import {
   TypewriterEffect,
@@ -49,12 +49,7 @@ export default function Home() {
             <p className="">Eat Medicine</p>
             <p>8.30a.m.</p>
             </div>
-            <div>
-              <div className="rounded-full bg-green-200 text-center">
-                <span>Done</span>
-              </div>
-            </div>
-
+            <Badge color="red" text="Missed" />
           </div>
 
           <div className="border-b  py-2 shadow-sm flex flex-row items-center justify-between">
@@ -62,12 +57,7 @@ export default function Home() {
             <p className="">Eat Medicine</p>
             <p>8.30a.m.</p>
             </div>
-            <div>
-              <div className="rounded-full bg-green-200 text-center">
-                <span>Done</span>
-              </div>
-            </div>
-
+            <Badge color="green" text="Done" />
           </div>
 
       <p>Card content</p>

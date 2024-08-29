@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.4.0",
+    "@ant-design/nextjs-registry": "^1.0.1",
     "@iconify/react": "^5.0.2",
     "antd": "^5.20.3",
     "autoprefixer": "^10.4.20",
