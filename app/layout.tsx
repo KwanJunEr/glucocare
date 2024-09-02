@@ -10,7 +10,7 @@ import Siderbar from "@/components/Sidebar";
 import Sider from "antd/es/layout/Sider";
 import Header from "antd/es/layout/layout";
 import Content from "antd/es/layout/layout";
-import { Layout, Menu, Avatar } from 'antd';
+import { Layout, Menu, Avatar, MenuProps } from 'antd';
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { LaptopOutlined, NotificationOutlined, UserOutlined, BellOutlined } from '@ant-design/icons';
 
