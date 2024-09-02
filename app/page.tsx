@@ -29,21 +29,22 @@ const words = [
 ];
 export default function Home() {
   return (
-    <div>
-      <div className="py-4 mb-4">
-        <TypewriterEffectSmooth words={words} />
-        <TextGenerateEffect words={words1} />
+    <div className="flex flex-col justify-center items-center">
+      <div className="py-4 mb-4 flex flex-col md:flex-col items-start w-full space-x-5 justify-start">
+        <div className="flex flex-col">
+          <TypewriterEffectSmooth words={words} />
+          <TextGenerateEffect words={words1} />
+        </div>
       </div>
       <div className="py-2 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-5">
         <ProfilePictureCard />
         <ProfileInfo />
       </div>
       <div className="py-2 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-5">
-       
       <Card 
         hoverable
         title = "Quick Actions"
-        className="md:w-[400px] w-full">
+        className="md:w-[400px] w-full !cursor-default">
           <div className="border-b  pb-2 shadow-sm flex flex-row items-center justify-between">
             <div className="flex flex-col space-y-1">
             <p className="">Eat Medicine</p>
@@ -62,40 +63,30 @@ export default function Home() {
 
       <p>Card content</p>
       <p>Card content</p>
-         
-          
         </Card>
           <Card
             hoverable
             title="Daily Health Checking"
             extra={<Button>Add Reminder</Button>}
-            className="md:w-[800px] w-full"
+            className="md:w-[800px] w-full !cursor-default"
           >
-           
           </Card>
-
-    
       </div>
 
-      <div className="py-2 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-5">
-    
+      <div className="py-2 flex w-[1220px] flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-5">
           <Card
             hoverable
             title="Daily Health Checking"
             extra={<Button>Add Reminder</Button>}
-            className="md:w-[800px] w-full"
+            className="md:w-[800px] w-full !cursor-default"
           >
-           
           </Card>
-
-      
           <Card
             hoverable
             title="Daily Health Checking"
             extra={<Button>Add Reminder</Button>}
-            className="md:w-[800px] w-full"
+            className="md:w-[800px] w-full !cursor-default"
           >
-           
           </Card>
       </div>
     </div>
