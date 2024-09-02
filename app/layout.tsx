@@ -12,7 +12,7 @@ import Header from "antd/es/layout/layout";
 import Content from "antd/es/layout/layout";
 import { Layout, Menu, Avatar, MenuProps } from 'antd';
 import { AntdRegistry } from "@ant-design/nextjs-registry";
-import { LaptopOutlined, NotificationOutlined, UserOutlined, BellOutlined } from '@ant-design/icons';
+import { LaptopOutlined, NotificationOutlined, UserOutlined, BellFilled } from '@ant-design/icons';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -52,8 +52,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <AntdRegistry>
-          <Layout className="h-screen">
-            <Header className="flex justify-between h-20 w-full !bg-sky-50 px-4">
+          <Layout className="h-full">
+            <Header className="flex justify-between h-20 w-full !bg-blue-950 px-4">
               <div className="flex justify-between h-full items-center">
               <div className="flex">
                 <Link href={'/'} className="flex items-center">
@@ -63,12 +63,12 @@ export default function RootLayout({
                     height={40}
                     width={40}
                   />
-                  <span className="ml-2 text-xl font-semibold text-gray-800">GlucoCare</span>
+                  <span className="ml-2 text-xl font-semibold text-white">GlucoCare</span>
                 </Link>
               </div>
               <div className="flex items-center space-x-4 w-24 justify-end">
-                <BellOutlined className="text-xl text-gray-600" />
-                <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center">
+                <BellFilled className="text-xl !text-gray-200" />
+                <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center">
                   <UserOutlined className="text-white" />
                 </div>
               </div>
@@ -82,7 +82,7 @@ export default function RootLayout({
                   defaultOpenKeys={['sub1']}
                   className="h-screen"
                   items={items2}
-                  theme="light"
+                  theme="dark"
                 />
               </Sider>
               <Layout style={{ padding: '0 24px 24px' }}>
