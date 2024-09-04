@@ -1,51 +1,52 @@
+'use client'
 import React from 'react'
+import { Row,Col, Button } from 'antd'
+import './componentindex.css';
 
 const ProfileInfo = () => {
   return (
     <a
   href="#"
-  className="relative block overflow-hidden rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8 bg-white"
+  className="relative block overflow-hidden rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8 z-20 bg-white"
+
 >
   <span
     className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
   ></span>
+<div className='md:w-[900px] w-[400px] sm:overflow-auto profilecard'>
+    <Row gutter={10}>
+      <Col span={8} className='space-y-3'>
+        <h3 className='text-lg font-bold text-blue-600'>Personal Details:</h3>
+        <p className='text-base text-black'>Name : James Doe</p>
+        <p className='text-base text-black'>Date of Birth: January 15, 1980</p>
+        <p className='text-base text-black'>Age: 44 years old</p>
+        <p className='text-base text-black'>Gender: Male</p>
+        
+      
+      </Col>
 
-  <div className="sm:flex sm:justify-between sm:gap-4">
-    <div>
-      <h3 className="text-lg font-bold text-gray-900 sm:text-xl">
-        Building a SaaS product as a software developer
-      </h3>
+      <Col span={8} className='space-y-3'>
+      <h3 className='text-lg font-bold text-blue-600'>Health Condition:</h3>
+      <p className='text-base text-black'>Diabetes Type: Type 2 Diabetes</p>
+        <p className='text-base text-black'>Data of Diagnosis : March 2015</p>
+        <p className='text-base text-black'>Medication: Metformin, Insulin</p>
+        <p className='text-base text-black'>Latest HbA1c: 6.5%</p>
+      
+      </Col>
 
-      <p className="mt-1 text-xs font-medium text-gray-600">By John Doe</p>
-    </div>
+      <Col span={8} className='space-y-3'>
+      <h3 className='text-lg font-bold text-blue-600'>Additional Information:</h3>
+            <p className='text-base text-black'>Emergency Contact: Jane,Doe </p>
+        <p className='text-base text-black'> Insurance Provider: <strong>None</strong></p>
+        <p className='text-base text-black'>Policy Number: <strong>None</strong></p>
+        <p className='text-base text-black'>Notes: Experiences with hypoglycemia.</p>
+      </Col>
 
-    <div className="hidden sm:block sm:shrink-0">
-      <img
-        alt=""
-        src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-        className="size-16 rounded-lg object-cover shadow-sm"
-      />
-    </div>
-  </div>
 
-  <div className="mt-4">
-    <p className="text-pretty text-sm text-gray-500">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. At velit illum provident a, ipsa
-      maiores deleniti consectetur nobis et eaque.
-    </p>
-  </div>
+    </Row>
+</div>
+  
 
-  <dl className="mt-6 flex gap-4 sm:gap-6">
-    <div className="flex flex-col-reverse">
-      <dt className="text-sm font-medium text-gray-600">Published</dt>
-      <dd className="text-xs text-gray-500">31st June, 2021</dd>
-    </div>
-
-    <div className="flex flex-col-reverse">
-      <dt className="text-sm font-medium text-gray-600">Reading time</dt>
-      <dd className="text-xs text-gray-500">3 minute</dd>
-    </div>
-  </dl>
 </a>
   )
 }

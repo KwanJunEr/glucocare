@@ -1,0 +1,10 @@
+.profilecard {
+    overflow: hidden; /* This hides the scrollbar but still allows scrolling */
+    /* For specific hiding of scrollbar (if needed, adjust according to your case) */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.profilecard::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Webkit-based browsers */
+}
