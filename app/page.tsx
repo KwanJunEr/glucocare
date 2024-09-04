@@ -16,6 +16,7 @@ import QuickActionList from "@/components/quickactionscomponents/quickactionlist
 import GotoButton from "@/components/quickactionscomponents/gotoButton";
 
 import DoctorAppointmentCard from "@/components/dashboardcomponents/doctorAppointmentCard";
+import RecentHealthDataTable from "@/components/dashboardcomponents/RecentHealthDataTable";
 const words1 = `Empowering Your Journey to Better Diabetes Control.`;
 
 const words = [
@@ -163,7 +164,7 @@ export default function Home() {
           className="md:w-[600px] w-full !cursor-default"
         >
           <div>
-            
+            <RecentHealthDataTable/>
           </div>
         </Card>
 
