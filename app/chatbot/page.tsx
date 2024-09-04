@@ -1,10 +1,11 @@
 'use client';
 
 import Title from 'antd/es/typography/Title';
-import { Card, Button, Input } from 'antd';
+import { Card, Button, Input, message } from 'antd';
 import { SendOutlined } from '@ant-design/icons';
 import React, { useState, useEffect, useRef } from 'react';
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import ReactMarkdown from 'react-markdown';
 
 const genAI = new GoogleGenerativeAI(process.env.NEXT_PUBLIC_GEMINI_API_KEY);
 
@@ -35,7 +36,7 @@ export default function Page() {
       const chat = model.startChat({
         history: messages.map(msg => ({
           role: msg.sender === 'user' ? 'user' : 'model',
-          parts: msg.text,
+          parts: [msg.text],
         })),
         generationConfig: {
           maxOutputTokens: 4096,
@@ -64,7 +65,7 @@ export default function Page() {
         <Card
           className="h-full flex flex-col" 
           title={<span className="text-2xl font-semibold">AI Consultation</span>}
-          bodyStyle={{ flex: 1, display: 'flex', flexDirection: 'column' }}
+          bodyStyle={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}
         >
           <div className="flex-grow overflow-auto" ref={chatContainerRef}>
             {messages.map((msg, index) => (
@@ -72,7 +73,7 @@ export default function Page() {
                 <div className={`max-w-[70%] p-2 rounded-lg ${
                   msg.sender === 'user' ? 'bg-blue-500 text-white' : 'bg-gray-200'
                 }`}>
-                  {msg.text}
+                  <ReactMarkdown>{msg.text}</ReactMarkdown>
                 </div>
               </div>
             ))}
