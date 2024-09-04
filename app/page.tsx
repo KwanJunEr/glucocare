@@ -15,6 +15,7 @@ import { useState } from "react";
 import QuickActionList from "@/components/quickactionscomponents/quickactionlist";
 import GotoButton from "@/components/quickactionscomponents/gotoButton";
 
+import DoctorAppointmentCard from "@/components/dashboardcomponents/doctorAppointmentCard";
 const words1 = `Empowering Your Journey to Better Diabetes Control.`;
 
 const words = [
@@ -22,13 +23,13 @@ const words = [
     text: "Welcome,",
   },
   {
-    text: "Kwan",
+    text: "Mr",
   },
   {
-    text: "Jun",
+    text: "James",
   },
   {
-    text: "Er",
+    text: "Doe",
   },
 ];
 export default function Home() {
@@ -60,17 +61,17 @@ export default function Home() {
           <div className="flex flex-col space-y-2">
             <div className="p-3 border-b-2  flex flex-row justify-between">
               <QuickActionList direction={"Resources"} />
-              <GotoButton/>
+              <GotoButton />
             </div>
 
             <div className="p-3 border-b-2  flex flex-row justify-between">
               <QuickActionList direction={"Community"} />
-              <GotoButton/>
+              <GotoButton />
             </div>
 
             <div className="p-3 border-b-2  flex flex-row justify-between">
               <QuickActionList direction={"Resources"} />
-              <GotoButton/>
+              <GotoButton />
             </div>
           </div>
         </Card>
@@ -80,9 +81,7 @@ export default function Home() {
           extra={<Button>Add Reminder</Button>}
           className="md:w-[800px] w-full !cursor-default max-h-[300px] overflow-auto scroll-smooth"
         >
-          <div>
-            
-          </div>
+          <div></div>
           <div className="flex flex-row items-center justify-between p-4 bg-white shadow-md rounded-md mt-2 ">
             {/* Medication and Time Details */}
             <div className="flex flex-col space-y-1">
@@ -162,14 +161,28 @@ export default function Home() {
           title="Recent Health Data"
           extra={<Button>Add Reminder</Button>}
           className="md:w-[600px] w-full !cursor-default"
-        ></Card>
+        >
+          <div>
+            
+          </div>
+        </Card>
 
         <Card
           hoverable
-          title="Reminders"
+          title="Doctor Appointments "
           extra={<Button>Add Reminder</Button>}
           className="md:w-[600px] w-full !cursor-default"
-        ></Card>
+        >
+          <div className="flex flex-col space-y-3">
+            <DoctorAppointmentCard
+              doctor="Dr. Smith"
+              appointmentDate={"19th September 2024"}
+              appointmentTime={"9 a.m."}
+              agenda={"Body Checkup"}
+              location={"Solaris Dutamas"}
+            />
+          </div>
+        </Card>
       </div>
     </div>
   );

@@ -24,18 +24,17 @@ const ProfilePictureCard = () => {
           />
           <div className="flex flex-col">
             <p className="font-normal text-base text-gray-50 relative z-10">
-              Manu Arora
+              James Doe 
             </p>
-            <p className="text-sm text-gray-400">2 min read</p>
+           
           </div>
         </div>
         <div className="text content">
           <h1 className="font-bold text-xl md:text-2xl text-gray-50 relative z-10">
-            Author Card
+            Job Title: Data Analyst 
           </h1>
           <p className="font-normal text-sm text-gray-50 relative z-10 my-4">
-            Card with Author avatar, complete name and time to read - most
-            suitable for blogs.
+            Been Struggling with Diabetes
           </p>
         </div>
       </div>
