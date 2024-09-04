@@ -79,7 +79,7 @@ export default function Home() {
         <Card
           hoverable
           title="Daily Health CheckIns"
-          extra={<Button>Add Reminder</Button>}
+          extra={<Button>Add Health CheckIns</Button>}
           className="md:w-[800px] w-full !cursor-default max-h-[300px] overflow-auto scroll-smooth"
         >
           <div></div>
@@ -160,7 +160,7 @@ export default function Home() {
         <Card
           hoverable
           title="Recent Health Data"
-          extra={<Button>Add Reminder</Button>}
+          extra={<Button>Add Health Data</Button>}
           className="md:w-[600px] w-full !cursor-default"
         >
           <div>
@@ -171,7 +171,7 @@ export default function Home() {
         <Card
           hoverable
           title="Doctor Appointments "
-          extra={<Button>Add Reminder</Button>}
+          extra={<Button>Add Appointments</Button>}
           className="md:w-[600px] w-full !cursor-default"
         >
           <div className="flex flex-col space-y-3">
