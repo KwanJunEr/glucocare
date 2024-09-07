@@ -10,9 +10,18 @@ import Siderbar from "@/components/Sidebar";
 import Sider from "antd/es/layout/Sider";
 import Header from "antd/es/layout/layout";
 import Content from "antd/es/layout/layout";
-import { Layout, Menu, Avatar } from 'antd';
+import { Layout, Menu, Avatar, MenuProps } from 'antd';
 import { AntdRegistry } from "@ant-design/nextjs-registry";
-import { LaptopOutlined, NotificationOutlined, UserOutlined, BellOutlined } from '@ant-design/icons';
+import { LaptopOutlined, NotificationOutlined, UserOutlined, BellFilled, HomeOutlined } from '@ant-design/icons';
+import { TbHealthRecognition,TbReportMedical } from "react-icons/tb";
+import { SiGotomeeting ,SiChatbot} from "react-icons/si";
+import { FaUserDoctor ,FaPersonRunning} from "react-icons/fa6";
+import { PiBowlFoodFill } from "react-icons/pi";
+import { CgCommunity } from "react-icons/cg";
+import { RiMentalHealthLine } from "react-icons/ri";
+import { IoLibrary,IoSettings } from "react-icons/io5";
+import { IoMdHelpCircle } from "react-icons/io";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,25 +33,60 @@ export const metadata: Metadata = {
   }
 };
 
-const items2: MenuProps['items'] = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
-  (icon, index) => {
-    const key = String(index + 1);
-
-    return {
-      key: `sub${key}`,
-      icon: React.createElement(icon),
-      label: `subnav ${key}`,
-
-      children: new Array(4).fill(null).map((_, j) => {
-        const subKey = index * 4 + j + 1;
-        return {
-          key: subKey,
-          label: `option${subKey}`,
-        };
-      }),
-    };
+const sidebarMenuItems: MenuProps['items'] = [
+  {
+    key:'home', icon:<HomeOutlined/>, label : <Link href={'/'}>Home</Link>
   },
-);
+  {
+    key:'dashboard', icon:<TbHealthRecognition/> ,label: <Link href = {'/healthdashboard'}>Health Dashboard</Link>
+
+  },
+  {
+    key:'Consultation',  icon:<SiGotomeeting/>, label:<Link href= {'/consultation_advisory'}>
+     Health Tools </Link>,children:[
+      {
+      key:'ai' , icon:<SiChatbot/>, label: <Link href={'/consultation_advisory/ai_consultation'}>Gluco AI</Link>
+      },
+      {
+        key:'health_report' , icon:<TbReportMedical/>, label: <Link href={'/consultation_advisory/health_report_advice'}>Health Report Advice</Link>
+      },
+      {
+        key:'doctor_consultation' , icon:<FaUserDoctor/>, label: <Link href={'/consultation_advisory/doctor_consultation'}>My Doctor</Link>
+      },
+      {
+        key:'dietnutrition' , icon:<PiBowlFoodFill/>, label: <Link href={'/consultation_advisory/diet_planning'}>Diet & Nutrition</Link>
+      },
+      {
+        key:'exercise' , icon:<FaPersonRunning/>, label: <Link href={'/consultation_advisory/exercise_planning'}>Exercise</Link>
+      },
+
+    ]
+  },
+  {
+    key:'Consultation',  icon:<SiGotomeeting/>, label:<Link href= {'/community_support'}>Support</Link>,children:[
+      {
+        key:"community", icon:<CgCommunity/>, label: <Link href = {'/community_support/community'} >Community </Link>
+      },
+      {
+        key:"mental_support", icon:<RiMentalHealthLine />, label: <Link href = {'/community_support/mental_support'} >Mental Support </Link>
+      },
+
+    ]
+  },
+  {
+    key:'health_knowledge',  icon:<IoLibrary />, label:<Link href= {'/health_knowledge'}>Knowledge</Link>
+  },
+  {
+    key:'settings',  icon:<IoSettings />, label:<Link href= {'/settings'}>Settings</Link>
+  },
+  {
+    key:'help',  icon:<IoMdHelpCircle />, label:<Link href= {'/help'}>Help</Link>
+  }
+
+  
+
+]
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -52,8 +96,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <AntdRegistry>
-          <Layout className="h-screen">
-            <Header className="flex justify-between h-20 w-full !bg-sky-50 px-4">
+          <Layout className="h-full">
+            <Header className="flex justify-between h-20 w-full !bg-blue-950 px-4">
               <div className="flex justify-between h-full items-center">
               <div className="flex">
                 <Link href={'/'} className="flex items-center">
@@ -63,12 +107,12 @@ export default function RootLayout({
                     height={40}
                     width={40}
                   />
-                  <span className="ml-2 text-xl font-semibold text-gray-800">GlucoCare</span>
+                  <span className="ml-2 text-xl font-semibold text-white">GlucoCare</span>
                 </Link>
               </div>
               <div className="flex items-center space-x-4 w-24 justify-end">
-                <BellOutlined className="text-xl text-gray-600" />
-                <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center">
+                <BellFilled className="text-xl !text-gray-200" />
+                <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center">
                   <UserOutlined className="text-white" />
                 </div>
               </div>
@@ -78,11 +122,11 @@ export default function RootLayout({
               <Sider width={200}>
                 <Menu
                   mode="inline"
-                  defaultSelectedKeys={['1']}
-                  defaultOpenKeys={['sub1']}
+                  defaultSelectedKeys={['home']}
+            
                   className="h-screen"
-                  items={items2}
-                  theme="light"
+                  items={sidebarMenuItems}
+                  theme="dark"
                 />
               </Sider>
               <Layout style={{ padding: '0 24px 24px' }}>
