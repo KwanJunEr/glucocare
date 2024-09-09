@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "@/components/Image";
-import Sidebar from "@/components/Sidebar";
+// import Sidebar from "@/components/Sidebar";
 // import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Menu from "./Menu";
@@ -16,11 +16,11 @@ const Layout = ({ background, back, title, children }: LayoutProps) => {
     return (
         <>
             <Head>
-                <title>Bruddle</title>
+                <title>GlucoCare</title>
             </Head>
-            <div className="relative pl-[18.75rem] xl:pl-20 md:pl-0 md:pb-20">
-                <Sidebar />
-                <div className="flex flex-col min-h-screen pt-18 md:pt-0 md:min-h-[calc(100vh-5rem)]">
+            <div className="relative xl:pl-20 md:pl-0 md:pb-20">
+                {/* <Sidebar /> */}
+                <div className="flex flex-col min-h-screen md:pt-0 md:min-h-[calc(100vh-5rem)]">
                     {/* <Header back={back} title={title} /> */}
                     <div className="flex grow">
                         <div className="flex flex-col grow max-w-[90rem] mx-auto pt-6 px-16 pb-2 4xl:max-w-full 2xl:px-8 lg:px-6 md:px-5">
