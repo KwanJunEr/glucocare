@@ -21,11 +21,11 @@ const CommunityContentCards = () => {
         <strong
           className="rounded border border-indigo-500 bg-indigo-500 px-3 py-1.5 text-[10px] font-medium text-white"
         >
-          Episode #101
+          #Healthy LifeStyle
         </strong>
   
         <h3 className="mt-4 text-lg font-medium sm:text-xl">
-          <a href="#" className="hover:underline"> Some Interesting Podcast Title </a>
+          <a href="#" className="hover:underline"> Some Interesting Post Title </a>
         </h3>
   
         <p className="mt-1 text-sm text-gray-700">
@@ -51,13 +51,13 @@ const CommunityContentCards = () => {
               ></path>
             </svg>
   
-            <p className="text-xs font-medium">48:32 minutes</p>
+          
           </div>
   
           <span className="hidden sm:block" aria-hidden="true">&middot;</span>
   
           <p className="mt-2 text-xs font-medium text-gray-500 sm:mt-0">
-            Featuring <a href="#" className="underline hover:text-gray-700">Barry</a>,
+            Written By: <a href="#" className="underline hover:text-gray-700">Barry</a>,
             <a href="#" className="underline hover:text-gray-700">Sandra</a> and
             <a href="#" className="underline hover:text-gray-700">August</a>
           </p>
