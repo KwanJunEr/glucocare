@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/charts": "^2.2.1",
     "@ant-design/icons": "^5.4.0",
     "@ant-design/nextjs-registry": "^1.0.1",
     "@chakra-ui/color-mode": "^2.2.0",
@@ -41,6 +42,7 @@
     "react-textarea-autosize": "^8.4.1",
     "react-tooltip": "^5.13.1",
     "recharts": "^2.5.0",
+    "react-markdown": "^9.0.1",
     "tailwind-merge": "^2.5.2",
     "tailwind-scrollbar": "^3.0.4",
     "tailwindcss-animate": "^1.0.7",

@@ -70,6 +70,9 @@ const sidebarMenuItems: MenuProps['items'] = [
       {
         key:"mental_support", icon:<RiMentalHealthLine />, label: <Link href = {'/community_support/mental_support'} >Mental Support </Link>
       },
+      {
+        key:"events", icon:<RiMentalHealthLine />, label: <Link href = {'/community_support/events'} >Events </Link>
+      },
 
     ]
   },
