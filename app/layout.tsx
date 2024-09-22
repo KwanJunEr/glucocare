@@ -18,7 +18,7 @@ import { SiGotomeeting ,SiChatbot} from "react-icons/si";
 import { FaUserDoctor ,FaPersonRunning} from "react-icons/fa6";
 import { PiBowlFoodFill } from "react-icons/pi";
 import { CgCommunity } from "react-icons/cg";
-import { RiMentalHealthLine } from "react-icons/ri";
+import { RiCalendarFill, RiMentalHealthLine } from "react-icons/ri";
 import { IoLibrary,IoSettings } from "react-icons/io5";
 import { IoMdHelpCircle } from "react-icons/io";
 
@@ -68,10 +68,7 @@ const sidebarMenuItems: MenuProps['items'] = [
         key:"community", icon:<CgCommunity/>, label: <Link href = {'/community_support/community'} >Community </Link>
       },
       {
-        key:"mental_support", icon:<RiMentalHealthLine />, label: <Link href = {'/community_support/mental_support'} >Mental Support </Link>
-      },
-      {
-        key:"events", icon:<RiMentalHealthLine />, label: <Link href = {'/community_support/events'} >Events </Link>
+        key:"events", icon:<RiCalendarFill />, label: <Link href = {'/community_support/events'} >Events </Link>
       },
 
     ]

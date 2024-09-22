@@ -2,6 +2,7 @@
 import React from "react";
 import { Form, Select, Input } from "antd";
 import EventCards from "@/components/eventcards/EventCards";
+import PastEventCards from "@/components/eventcards/PastEventCards";
 
 const Events = () => {
   const { Search } = Input;
@@ -35,6 +36,11 @@ const Events = () => {
             <EventCards />
             <EventCards />
             <EventCards />
+
+            {/*Event Cards Row 2 */}
+            <EventCards />
+            <EventCards />
+            <EventCards />
           </div>
         </div>
 
@@ -43,9 +49,10 @@ const Events = () => {
           <div className="shadow-sm p-4 bg-white rounded-md">
             <h3 className="text-lg font-semibold mb-4">Past Events</h3>
             {/* Display past events here */}
-            <EventCards />
-            <EventCards />
-            <EventCards />
+           <PastEventCards/>
+           <PastEventCards/>
+     
+     
           </div>
         </div>
       </div>
