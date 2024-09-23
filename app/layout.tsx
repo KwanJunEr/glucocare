@@ -21,7 +21,8 @@ import { CgCommunity } from "react-icons/cg";
 import { RiCalendarFill, RiMentalHealthLine } from "react-icons/ri";
 import { IoLibrary,IoSettings } from "react-icons/io5";
 import { IoMdHelpCircle } from "react-icons/io";
-
+import '@mantine/core/styles.css';
+import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -95,6 +96,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <MantineProvider>
         <AntdRegistry>
           <Layout className="h-full">
             <Header className="flex justify-between h-20 w-full !bg-blue-950 px-4">
@@ -143,6 +145,7 @@ export default function RootLayout({
             </Layout>
           </Layout>
         </AntdRegistry>
+        </MantineProvider>
       </body>
     </html>
   );
