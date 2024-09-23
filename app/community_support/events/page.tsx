@@ -2,73 +2,58 @@
 import React from "react";
 import { Form, Select, Input } from "antd";
 import EventCards from "@/components/eventcards/EventCards";
-
+import PastEventCards from "@/components/eventcards/PastEventCards";
 
 const Events = () => {
   const { Search } = Input;
+
   return (
-    <div>
-      <div className="flex flex-col space-y-2 my-4">
-        <h1 className="text-4xl font-semibold">Explore Events</h1>
-        <h5 className="text-xl">
-          Discover a variety of health events, workshops, and webinars designed
-          to help you manage diabetes.{" "}
-        </h5>
+    <div className="p-6">
+      {/* Heading Section */}
+      <div className="mb-8">
+        <h1 className="text-2xl font-bold">Explore Events</h1>
+        <p className="text-gray-600">Discover upcoming and past events</p>
       </div>
-      <div className="grid grid-cols-4 mt-2">
-        <div className="col-span-3 flex flex-col bg-red-50">
-          <div className="flex flex-row space-x-2">
-            <Select
-              placeholder="Select An Event Category"
-              className="w-[200px]"
-            >
-              <Select.Option value="demo">Nutrition</Select.Option>
-              <Select.Option value="demo">Fitness</Select.Option>
-            </Select>
 
+      {/* Main Content: Filters and Events */}
+      <div className="grid grid-cols-4 gap-8">
+        {/* Left Section: Filters and Current Events */}
+        <div className="col-span-3">
+          {/* Filters Section */}
+          <div className="flex flex-row items-center mb-6 space-x-4">
             <Select placeholder="Choose a Month" className="w-[200px]">
-              <Select.Option value="demo">January</Select.Option>
+              <Select.Option value="january">January</Select.Option>
+              <Select.Option value="february">February</Select.Option>
+              <Select.Option value="march">March</Select.Option>
+              {/* Add other months here */}
             </Select>
-
-            <Select placeholder="Free or Paid" className="w-[200px]">
-              <Select.Option value="demo">Free </Select.Option>
-              <Select.Option value="demo">Paid </Select.Option>
-            </Select>
-            <div>
-              <Search
-                className=""
-                placeholder="Serach for @Keywords, @Hastags"
-                allowClear
-                enterButton="Search"
-                size="middle"
-                width={"500px"}
-                height={1}
-              />
-            </div>
-          </div>
-          {/*Events*/}
-          <div className="mt-5 flex flex-row space-x-5 ">
-            <EventCards/>
-            <EventCards/>
-            <EventCards/>
-          
+            <Search placeholder="Search events" className="w-[300px]" />
           </div>
 
-          <div className="mt-5 flex flex-row space-x-5 ">
-            <EventCards/>
-            <EventCards/>
-            <EventCards/>
-          
+          {/* Current Events Section */}
+          <div className="grid grid-cols-3 gap-5">
+            {/* Event rows can be dynamically rendered here */}
+            <EventCards />
+            <EventCards />
+            <EventCards />
+
+            {/*Event Cards Row 2 */}
+            <EventCards />
+            <EventCards />
+            <EventCards />
           </div>
         </div>
-        <div className="col-span1">
-          <div className="shadow-sm px-6 py-2">
-            <h3>Past Events</h3>
 
-
+        {/* Right Section: Past Events */}
+        <div className="col-span-1">
+          <div className="shadow-sm p-4 bg-white rounded-md">
+            <h3 className="text-lg font-semibold mb-4">Past Events</h3>
+            {/* Display past events here */}
+           <PastEventCards/>
+           <PastEventCards/>
+     
+     
           </div>
-
-
         </div>
       </div>
     </div>
