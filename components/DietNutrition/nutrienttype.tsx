@@ -1,7 +1,7 @@
 "use client"
 
 import { TrendingUp } from "lucide-react"
-import { CartesianGrid, LabelList, Line, LineChart, XAxis } from "recharts"
+import { Bar, BarChart, CartesianGrid, LabelList, XAxis, YAxis } from "recharts"
 
 import {
   Card,
@@ -11,12 +11,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import {
+  ChartConfig,
+  ChartContainer,
+  ChartTooltip,
+  ChartTooltipContent,
+} from "@/components/ui/chart"
 
-import { ChartConfig,ChartContainer,ChartTooltip,ChartTooltipContent} from "../ui/chart"
-
-
-  
-export const description = "A line chart with a label"
+export const description = "A bar chart with a custom label"
 
 const chartData = [
   { month: "January", desktop: 186, mobile: 80 },
@@ -25,6 +27,9 @@ const chartData = [
   { month: "April", desktop: 73, mobile: 190 },
   { month: "May", desktop: 209, mobile: 130 },
   { month: "June", desktop: 214, mobile: 140 },
+  { month: "July", desktop: 214, mobile: 140 },
+    { month: "August", desktop: 214, mobile: 140 },
+    { month: "September", desktop: 239, mobile: 149 },
 ]
 
 const chartConfig = {
@@ -36,66 +41,73 @@ const chartConfig = {
     label: "Mobile",
     color: "hsl(var(--chart-2))",
   },
+  label: {
+    color: "hsl(var(--background))",
+  },
 } satisfies ChartConfig
 
-export function TimeSpent() {
+export function NutrientType() {
   return (
     <Card className="w-[400px]">
       <CardHeader>
-        <CardTitle>Workout Frequency</CardTitle>
+        <CardTitle>Types of Nutrients You Have Eaten</CardTitle>
         <CardDescription>January - September 2024</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
-          <LineChart
+          <BarChart
             accessibilityLayer
             data={chartData}
+            layout="vertical"
             margin={{
-              top: 20,
-              left: 12,
-              right: 12,
+              right: 16,
             }}
           >
-            <CartesianGrid vertical={false} />
-            <XAxis
+            <CartesianGrid horizontal={false} />
+            <YAxis
               dataKey="month"
+              type="category"
               tickLine={false}
+              tickMargin={10}
               axisLine={false}
-              tickMargin={8}
               tickFormatter={(value) => value.slice(0, 3)}
+              hide
             />
+            <XAxis dataKey="desktop" type="number" hide />
             <ChartTooltip
               cursor={false}
               content={<ChartTooltipContent indicator="line" />}
             />
-            <Line
+            <Bar
               dataKey="desktop"
-              type="natural"
-              stroke="var(--color-desktop)"
-              strokeWidth={2}
-              dot={{
-                fill: "var(--color-desktop)",
-              }}
-              activeDot={{
-                r: 6,
-              }}
+              layout="vertical"
+              fill="var(--color-desktop)"
+              radius={4}
             >
               <LabelList
-                position="top"
-                offset={12}
+                dataKey="month"
+                position="insideLeft"
+                offset={8}
+                className="fill-[--color-label]"
+                fontSize={12}
+              />
+              <LabelList
+                dataKey="desktop"
+                position="right"
+                offset={8}
                 className="fill-foreground"
                 fontSize={12}
               />
-            </Line>
-          </LineChart>
+            </Bar>
+          </BarChart>
         </ChartContainer>
       </CardContent>
       <CardFooter className="flex-col items-start gap-2 text-sm">
         <div className="flex gap-2 font-medium leading-none">
-          Trending up by 1.2% this month <TrendingUp className="h-4 w-4" />
+          Trending up by 1.0%  for Protein this month <TrendingUp className="h-4 w-4" />
         </div>
         <div className="leading-none text-muted-foreground">
-          You have spent more time exercising in the weekend.
+         You have eaten 100g more Protein than last month
         </div>
       </CardFooter>
     </Card>

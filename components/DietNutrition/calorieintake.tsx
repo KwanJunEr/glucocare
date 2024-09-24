@@ -38,11 +38,11 @@ const chartConfig = {
   },
 } satisfies ChartConfig
 
-export function TimeSpent() {
+export function CalorieIntake() {
   return (
     <Card className="w-[400px]">
       <CardHeader>
-        <CardTitle>Workout Frequency</CardTitle>
+        <CardTitle>Calorie Intake</CardTitle>
         <CardDescription>January - September 2024</CardDescription>
       </CardHeader>
       <CardContent>
@@ -92,10 +92,10 @@ export function TimeSpent() {
       </CardContent>
       <CardFooter className="flex-col items-start gap-2 text-sm">
         <div className="flex gap-2 font-medium leading-none">
-          Trending up by 1.2% this month <TrendingUp className="h-4 w-4" />
+          Trending down by 1.8% this month <TrendingUp className="h-4 w-4" />
         </div>
         <div className="leading-none text-muted-foreground">
-          You have spent more time exercising in the weekend.
+          You have consume 200kcal lesser compared to last month
         </div>
       </CardFooter>
     </Card>
