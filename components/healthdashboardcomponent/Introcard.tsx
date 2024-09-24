@@ -14,32 +14,23 @@ const Introcard = () => {
 
     <div>
       <h3 className="font-medium sm:text-lg w-[500px]">
-        <a href="#" className="hover:underline"> Question about Livewire Rendering and Alpine JS </a>
+        <a href="#" className="hover:underline"> Mr.James Doe Health Dashboard </a>
       </h3>
 
-      <p className="line-clamp-2 text-sm text-gray-700 w-[600px]">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, accusantium temporibus
-        iure delectus ut totam natus nesciunt ex? Ducimus, enim.
+      <p className="line-clamp-2 text-sm text-gray-700 w-[600px] font-bold">
+        Discover Insight Trends of Your Various Health Metrics
       </p>
 
-      <div className="mt-2 sm:flex sm:items-center sm:gap-2">
-        <div className="flex items-center gap-1 text-gray-500">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="size-4"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth="2"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
-            />
-          </svg>
+      <div className="mt-6 sm:flex sm:items-center sm:gap-2">
+        <div className="flex space-x-4 flex-row gap-1 text-gray-500">
+        <button className="px-4 py-2 bg-blue-600 text-white font-semibold rounded shadow hover:bg-blue-700 transition">
+    Add Health Data
+  </button>
+  <button className="px-4 py-2 bg-green-600 text-white font-semibold rounded shadow hover:bg-green-700 transition">
+    Import Health CSV
+  </button>
 
-          <p className="text-xs">14 comments</p>
+      
         </div>
 
         <span className="hidden sm:block" aria-hidden="true">&middot;</span>
@@ -71,7 +62,7 @@ const Introcard = () => {
         />
       </svg>
 
-      <span className="text-[10px] font-medium sm:text-xs">Solved!</span>
+   
     </strong>
   </div>
 </article>

@@ -17,7 +17,7 @@ const HealthDashboard = () => {
         {/*Health Goal*/}
 
       </div>
-      <div>
+      <div className='mt-3'>
       <WeightCard/>
       </div>
       {/*Graphs and Dashboard 6 Graphs */}
