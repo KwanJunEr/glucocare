@@ -8,7 +8,7 @@ type ResourceProps = {
 const Resource = ({ item }: ResourceProps) => (
     <Link
         className="group flex mb-5 pb-5 border-b border-n-1 last:mb-0 last:pb-0 last:border-none dark:border-white"
-        href="/education/course-details"
+        href="/resources/resources-details"
     >
         <div className="relative shrink-0 w-21 h-21 border border-n-1 overflow-hidden md:hidden">
             <Image
@@ -40,7 +40,7 @@ const Resource = ({ item }: ResourceProps) => (
                     </div>
                     <div className="mr-1.5 font-bold">{item.ratingValue}</div>
                     <div className="md:hidden">
-                        ({item.ratingCounter}) {item.students} students
+                        ({item.ratingCounter}) {item.students} users
                     </div>
                 </div>
             </div>
