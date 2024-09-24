@@ -71,45 +71,47 @@ const Exercise = () => {
       </div>
       {/*Recommended Exercise*/}
       <div className="flex flex-col space-y-5">
-  <div>
-    <h1 className="text-xl font-bold ">Your Recommended Exercise</h1>
-    <div className="flex flex-row w-full justify-between"> {/* Corrected class */}
-      <div>
-        <h5 className="font-bold text-gray-500">
-          Here are a few recommended exercises that you can perform to grow healthier
-        </h5>
-      </div>
-      <div>
-        <button className="bg-blue-500 text-white px-2 py-1 rounded hover:opacity-80 font-bold">View More</button>
-      </div>
-    </div>
-  </div>
-        <div className="flex flex-row space-x-6">
-            <ExerciseCards
-            exercisetype = "Strength"
-             exercisetitle = "Push-Ups"
-              img = "https://images.unsplash.com/photo-1686247166156-0bca3e8b55d9?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHVzaCUyMHVwc3xlbnwwfHwwfHx8MA%3D%3D"
-               description = " A basic but effective exercise for upper body strength."
-            />
-
-<ExerciseCards
-            exercisetype = "Strength"
-             exercisetitle = "Squats"
-              img = "https://plus.unsplash.com/premium_photo-1661906824628-3ac1f6c4ce1c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3F1YXRzfGVufDB8fDB8fHww"
-               description = "Great for building leg muscles and improving lower body strength."
-            />
-
-<ExerciseCards
-            exercisetype = "Flexibility"
-             exercisetitle = "Yoga"
-              img = "https://plus.unsplash.com/premium_photo-1661777196224-bfda51e61cfd?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8eW9nYXxlbnwwfHwwfHx8MA%3D%3D"
-               description = " Improves flexibility, balance, and overall mindfulness."
-            />
-            
+        <div>
+          <h1 className="text-xl font-bold ">Your Recommended Exercise</h1>
+          <div className="flex flex-row w-full justify-between">
+            {" "}
+            {/* Corrected class */}
+            <div>
+              <h5 className="font-bold text-gray-500">
+                Here are a few recommended exercises that you can perform to
+                grow healthier
+              </h5>
+            </div>
+            <div>
+              <button className="bg-blue-500 text-white px-2 py-1 rounded hover:opacity-80 font-bold">
+                View More
+              </button>
+            </div>
+          </div>
         </div>
+        <div className="flex flex-row space-x-6">
+          <ExerciseCards
+            exercisetype="Strength"
+            exercisetitle="Push-Ups"
+            img="https://images.unsplash.com/photo-1686247166156-0bca3e8b55d9?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHVzaCUyMHVwc3xlbnwwfHwwfHx8MA%3D%3D"
+            description=" A basic but effective exercise for upper body strength."
+          />
 
+          <ExerciseCards
+            exercisetype="Strength"
+            exercisetitle="Squats"
+            img="https://plus.unsplash.com/premium_photo-1661906824628-3ac1f6c4ce1c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3F1YXRzfGVufDB8fDB8fHww"
+            description="Great for building leg muscles and improving lower body strength."
+          />
+
+          <ExerciseCards
+            exercisetype="Flexibility"
+            exercisetitle="Yoga"
+            img="https://plus.unsplash.com/premium_photo-1661777196224-bfda51e61cfd?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8eW9nYXxlbnwwfHwwfHx8MA%3D%3D"
+            description=" Improves flexibility, balance, and overall mindfulness."
+          />
+        </div>
       </div>
-      
     </div>
   );
 };

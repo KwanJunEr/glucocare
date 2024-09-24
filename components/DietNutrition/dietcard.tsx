@@ -1,13 +1,13 @@
 import React from "react";
 
 interface ExerciseCardsProps {
-  exercisetype: String;
-  exercisetitle: String;
+  foodtype: String;
+  foodtitle: String;
   img: string;
   description: String;
 }
 
-const ExerciseCards = ({ exercisetype, exercisetitle, img, description }: ExerciseCardsProps) => {
+const DietCards = ({ foodtype, foodtitle, img, description }: ExerciseCardsProps) => {
   return (
     <a href="#" className="group relative block bg-black">
       <img
@@ -18,10 +18,10 @@ const ExerciseCards = ({ exercisetype, exercisetitle, img, description }: Exerci
 
       <div className="relative p-4 sm:p-6 lg:p-8">
         <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
-          {exercisetype}
+          {foodtype}
         </p>
 
-        <p className="text-xl font-bold text-white sm:text-2xl">{exercisetitle}</p>
+        <p className="text-xl font-bold text-white sm:text-2xl">{foodtitle}</p>
 
         <div className="mt-32 sm:mt-48 lg:mt-64">
           <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
@@ -35,4 +35,4 @@ const ExerciseCards = ({ exercisetype, exercisetitle, img, description }: Exerci
   );
 };
 
-export default ExerciseCards;
+export default DietCards;
