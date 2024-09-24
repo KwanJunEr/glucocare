@@ -7,7 +7,7 @@ const Notifications = ({}: NotificationsProps) => {
     const [notifications, setNotifications] = useState([
         {
             id: "0",
-            label: "Product updates",
+            label: "Article updates",
             title: "Receive messages from our platform",
             isChecked: true,
         },

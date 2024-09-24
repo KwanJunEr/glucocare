@@ -26,10 +26,6 @@ const SettingsPage = () => {
             value: "social-networks",
         },
         {
-            title: "APIs",
-            value: "apis",
-        },
-        {
             title: "Notifications",
             value: "notifications",
         },
