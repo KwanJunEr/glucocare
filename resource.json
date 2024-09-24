@@ -1,0 +1,215 @@
+{
+  "en": {
+    "title": "Managing Blood Glucose with Technology",
+    "subtitle": "Learn how to monitor and control blood glucose levels using modern technology and devices.",
+    "rating": {
+      "value": 4.8,
+      "reviews": "(3,000)",
+      "users": "50K users"
+    },
+    "resource_details": {
+      "description": "This resource is designed for individuals who want to learn effective blood glucose management using available health technologies.",
+      "details": [
+        {
+          "label": "Resource Type",
+          "value": "Educational Guide"
+        },
+        {
+          "label": "Time to Read",
+          "value": "Approx. 2 hours"
+        },
+        {
+          "label": "Language",
+          "value": "Available in English, French, German"
+        }
+      ]
+    },
+    "cta": {
+      "button_text": "Add to Library",
+      "icons": ["email", "share"]
+    },
+    "about_this_resource": {
+      "overview": {
+        "title": "Overview",
+        "content": "This resource provides valuable insights into managing diabetes effectively using technology, nutritional advice, and lifestyle adjustments. It includes information on continuous glucose monitoring, digital tools for diabetes management, and ways to support better health outcomes."
+      },
+      "responsibilities": {
+        "title": "Responsibilities",
+        "content": [
+          "Provide educational resources on managing diabetes and monitoring blood glucose levels",
+          "Offer up-to-date information on technology and tools for diabetes management",
+          "Promote lifestyle adjustments including diet and exercise for effective diabetes control"
+        ],
+        "see_more": "See more"
+      },
+      "key_topics_covered": {
+        "title": "Key topics covered",
+        "topics": ["Diabetes Care", "Glucose Monitoring", "Nutrition", "Exercise Management", "Digital Health Tools"]
+      },
+      "what_you_will_find": {
+        "title": "What you will find",
+        "points": [
+          "Understand the role of continuous glucose monitoring in diabetes care",
+          "Leverage mobile apps and devices for real-time blood sugar tracking",
+          "Implement lifestyle changes to improve overall health outcomes for diabetic patients"
+        ]
+      },
+      "resource_outcomes": {
+        "title": "Resource outcomes",
+        "description": "These resources aim to equip you with the latest knowledge in diabetes management, helping both healthcare providers and patients make informed decisions for better diabetes care.",
+        "progress_bars": [
+          {
+            "label": "Improved knowledge in diabetes management using digital tools and resources",
+            "value": 50
+          },
+          {
+            "label": "Enhanced ability to provide patient-centric care for individuals with diabetes",
+            "value": 70
+          }
+        ]
+      }
+    }
+  },
+  "french": {
+    "title": "Gestion de la glycémie avec la technologie",
+    "subtitle": "Apprenez à surveiller et à contrôler les niveaux de glycémie en utilisant des technologies et des dispositifs modernes.",
+    "rating": {
+      "value": 4.8,
+      "reviews": "(3 000)",
+      "users": "50K utilisateurs"
+    },
+    "resource_details": {
+      "description": "Cette ressource est conçue pour les personnes souhaitant apprendre à gérer efficacement leur glycémie à l'aide des technologies de santé disponibles.",
+      "details": [
+        {
+          "label": "Type de ressource",
+          "value": "Guide pédagogique"
+        },
+        {
+          "label": "Temps de lecture",
+          "value": "Environ 2 heures"
+        },
+        {
+          "label": "Langue",
+          "value": "Disponible en anglais, français, allemand"
+        }
+      ]
+    },
+    "cta": {
+      "button_text": "Ajouter à la bibliothèque",
+      "icons": ["email", "partager"]
+    },
+    "about_this_resource": {
+      "overview": {
+        "title": "Aperçu",
+        "content": "Cette ressource fournit des informations précieuses sur la gestion du diabète en utilisant la technologie, des conseils nutritionnels et des ajustements de mode de vie. Elle inclut des informations sur la surveillance continue de la glycémie, les outils numériques pour la gestion du diabète et des moyens d'améliorer les résultats de santé."
+      },
+      "responsibilities": {
+        "title": "Responsabilités",
+        "content": [
+          "Fournir des ressources éducatives sur la gestion du diabète et la surveillance de la glycémie",
+          "Fournir des informations à jour sur les technologies et outils de gestion du diabète",
+          "Promouvoir les ajustements du mode de vie, y compris l'alimentation et l'exercice, pour un meilleur contrôle du diabète"
+        ],
+        "see_more": "Voir plus"
+      },
+      "key_topics_covered": {
+        "title": "Sujets principaux couverts",
+        "topics": ["Soins du diabète", "Surveillance de la glycémie", "Nutrition", "Gestion de l'exercice", "Outils de santé numérique"]
+      },
+      "what_you_will_find": {
+        "title": "Ce que vous trouverez",
+        "points": [
+          "Comprendre le rôle de la surveillance continue de la glycémie dans la gestion du diabète",
+          "Utiliser des applications mobiles et des dispositifs pour surveiller en temps réel la glycémie",
+          "Mettre en œuvre des changements de mode de vie pour améliorer les résultats de santé des patients diabétiques"
+        ]
+      },
+      "resource_outcomes": {
+        "title": "Résultats de la ressource",
+        "description": "Ces ressources visent à vous équiper des dernières connaissances sur la gestion du diabète, aidant à la fois les prestataires de soins de santé et les patients à prendre des décisions éclairées pour une meilleure gestion du diabète.",
+        "progress_bars": [
+          {
+            "label": "Connaissance améliorée de la gestion du diabète grâce aux outils et ressources numériques",
+            "value": 50
+          },
+          {
+            "label": "Capacité accrue à fournir des soins centrés sur le patient pour les personnes atteintes de diabète",
+            "value": 70
+          }
+        ]
+      }
+    }
+  },
+  "german": {
+    "title": "Blutzucker-Management mit Technologie",
+    "subtitle": "Erfahren Sie, wie Sie mit modernen Technologien und Geräten den Blutzuckerspiegel überwachen und kontrollieren können.",
+    "rating": {
+      "value": 4.8,
+      "reviews": "(3.000)",
+      "users": "50K Benutzer"
+    },
+    "resource_details": {
+      "description": "Diese Ressource ist für Personen gedacht, die lernen möchten, den Blutzuckerspiegel effektiv mit den verfügbaren Gesundheitstechnologien zu kontrollieren.",
+      "details": [
+        {
+          "label": "Ressourcentyp",
+          "value": "Bildungsleitfaden"
+        },
+        {
+          "label": "Lesezeit",
+          "value": "Ca. 2 Stunden"
+        },
+        {
+          "label": "Sprache",
+          "value": "Verfügbar in Englisch, Französisch, Deutsch"
+        }
+      ]
+    },
+    "cta": {
+      "button_text": "Zur Bibliothek hinzufügen",
+      "icons": ["E-Mail", "Teilen"]
+    },
+    "about_this_resource": {
+      "overview": {
+        "title": "Überblick",
+        "content": "Diese Ressource bietet wertvolle Einblicke in das effektive Management von Diabetes durch Technologie, Ernährungsberatung und Lebensstiländerungen. Sie enthält Informationen zur kontinuierlichen Blutzuckerüberwachung, digitalen Werkzeugen zur Diabetesverwaltung und Möglichkeiten, die Gesundheitsergebnisse zu verbessern."
+      },
+      "responsibilities": {
+        "title": "Verantwortlichkeiten",
+        "content": [
+          "Bereitstellung von Bildungsressourcen zur Verwaltung von Diabetes und zur Überwachung des Blutzuckerspiegels",
+          "Bereitstellung aktueller Informationen zu Technologien und Werkzeugen für das Diabetesmanagement",
+          "Förderung von Lebensstiländerungen, einschließlich Ernährung und Bewegung, zur effektiven Kontrolle des Diabetes"
+        ],
+        "see_more": "Mehr anzeigen"
+      },
+      "key_topics_covered": {
+        "title": "Abgedeckte Schwerpunktthemen",
+        "topics": ["Diabetespflege", "Blutzuckerüberwachung", "Ernährung", "Bewegungsmanagement", "Digitale Gesundheitstools"]
+      },
+      "what_you_will_find": {
+        "title": "Was Sie finden werden",
+        "points": [
+          "Verstehen Sie die Rolle der kontinuierlichen Blutzuckerüberwachung im Diabetesmanagement",
+          "Nutzen Sie mobile Apps und Geräte zur Echtzeitüberwachung des Blutzuckerspiegels",
+          "Implementieren Sie Lebensstiländerungen zur Verbesserung der allgemeinen Gesundheitsergebnisse bei diabetischen Patienten"
+        ]
+      },
+      "resource_outcomes": {
+        "title": "Ressourcenergebnisse",
+        "description": "Diese Ressourcen sollen Ihnen die neuesten Erkenntnisse im Diabetesmanagement vermitteln und sowohl Gesundheitsdienstleister als auch Patienten dabei unterstützen, fundierte Entscheidungen für eine bessere Diabetesversorgung zu treffen.",
+        "progress_bars": [
+          {
+            "label": "Verbessertes Wissen über das Diabetesmanagement mit digitalen Tools und Ressourcen",
+            "value": 50
+          },
+          {
+            "label": "Erhöhte Fähigkeit, patientenzentrierte Versorgung für Menschen mit Diabetes bereitzustellen",
+            "value": 70
+          }
+        ]
+      }
+    }
+  }
+}
