@@ -78,7 +78,7 @@ const sidebarMenuItems: MenuProps['items'] = [
     key:'health_knowledge',  icon:<IoLibrary />, label:<Link href= {'/resources/resources-v2'}>Knowledge</Link>
   },
   {
-    key:'settings',  icon:<IoSettings />, label:<Link href= {'/settings'}>Settings</Link>
+    key:'settings',  icon:<IoSettings />, label:<Link href= {'/profile/settings'}>Settings</Link>
   },
   {
     key:'help',  icon:<IoMdHelpCircle />, label:<Link href= {'/help'}>Help</Link>
