@@ -82,3 +82,7 @@
       @apply bg-blue-1 scale-100; 
   }
 }
+
+.sizetext{
+  font-size:large !important;
+}

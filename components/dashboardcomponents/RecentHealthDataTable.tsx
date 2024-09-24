@@ -59,7 +59,7 @@ const columns = [
 
 const RecentHealthDataTable = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ">
       <h5 className="font-semibold">
         Latest Updated Health Data:{" "}
         <span className="text-gray-500 font-bold">

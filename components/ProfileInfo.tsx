@@ -13,7 +13,7 @@ const ProfileInfo = () => {
   <span
     className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
   ></span>
-<div className='md:w-[900px] w-[400px] sm:overflow-auto profilecard'>
+<div className='w-[1000px]  sm:overflow-auto profilecard'>
     <Row gutter={10}>
       <Col span={8} className='space-y-3'>
         <h3 className='text-lg font-bold text-blue-600'>Personal Details:</h3>
