@@ -42,7 +42,7 @@ const Events = () => {
               title="Managing Diabetes: Tips for a Healthy Lifestyle"
               date="October 10, 2024"
               time="10:00 AM - 12:00 PM"
-              day="Thursday1"
+              day="Thursday"
 
             />
 
