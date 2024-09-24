@@ -97,24 +97,6 @@ export default function Page() {
                 </div>
               </div>
             ))}
-            {/*
-            {messages.map((msg, index) => (
-              <div
-                key={index}
-                className={`flex ${msg.sender === "user" ? "justify-end" : "justify-start"} mb-2`}
-              >
-                <div
-                  className={`max-w-[70%] p-2 rounded-lg ${
-                    msg.sender === "user"
-                      ? "bg-blue-500 text-white"
-                      : "bg-gray-200"
-                  }`}
-                >
-                  <ReactMarkdown>{msg.text}</ReactMarkdown>
-                </div>
-              </div>
-            ))} 
-            */}
           </div>
           <div className="mt-4 flex">
             <Input
