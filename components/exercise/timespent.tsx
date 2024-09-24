@@ -42,8 +42,8 @@ export function TimeSpent() {
   return (
     <Card className="w-[400px]">
       <CardHeader>
-        <CardTitle>Line Chart - Label</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
+        <CardTitle>Workout Frequency</CardTitle>
+        <CardDescription>January - September 2024</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
@@ -92,10 +92,10 @@ export function TimeSpent() {
       </CardContent>
       <CardFooter className="flex-col items-start gap-2 text-sm">
         <div className="flex gap-2 font-medium leading-none">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+          Trending up by 1.2% this month <TrendingUp className="h-4 w-4" />
         </div>
         <div className="leading-none text-muted-foreground">
-          Showing total visitors for the last 6 months
+          You have spent more time exercising in the weekend.
         </div>
       </CardFooter>
     </Card>

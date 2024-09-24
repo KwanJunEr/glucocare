@@ -27,8 +27,9 @@ const chartData = [
   { month: "April", desktop: 73, mobile: 190 },
   { month: "May", desktop: 209, mobile: 130 },
   { month: "June", desktop: 214, mobile: 140 },
-  { month: "June", desktop: 214, mobile: 140 },
-    { month: "June", desktop: 214, mobile: 140 },
+  { month: "July", desktop: 214, mobile: 140 },
+    { month: "August", desktop: 214, mobile: 140 },
+    { month: "September", desktop: 239, mobile: 149 },
 ]
 
 const chartConfig = {
@@ -49,8 +50,8 @@ export function DayIntensity() {
   return (
     <Card className="w-[400px]">
       <CardHeader>
-        <CardTitle>Bar Chart - Custom Label</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
+        <CardTitle>Calories Burned by Exercise Types</CardTitle>
+        <CardDescription>January - September 2024</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
@@ -103,10 +104,10 @@ export function DayIntensity() {
       </CardContent>
       <CardFooter className="flex-col items-start gap-2 text-sm">
         <div className="flex gap-2 font-medium leading-none">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+          Trending up by 1.0% this month <TrendingUp className="h-4 w-4" />
         </div>
         <div className="leading-none text-muted-foreground">
-          Showing total visitors for the last 6 months
+         You have burned 109 more calories compared to last month
         </div>
       </CardFooter>
     </Card>
