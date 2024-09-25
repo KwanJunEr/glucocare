@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Image from "@/components/Image";
 
-type CoursesProps = {
+type ResourcesProps = {
     items: any;
 };
 
-const Courses = ({ items }: CoursesProps) => (
+const Resources = ({ items }: ResourcesProps) => (
     <div className="-mt-[1.25rem] -ml-[1.25rem] clear-both md:ml-0">
         {items.map((item: any) => (
             <Link
@@ -22,7 +22,7 @@ const Courses = ({ items }: CoursesProps) => (
                 />
                 <div className="absolute left-0 right-0 bottom-0 h-[6.25rem] bg-gradient-to-b from-n-1/0 to-n-1/60 pointer-events-none"></div>
                 <div className="relative z-2 label-black ml-auto mb-auto dark:bg-n-1">
-                    {item.counter} Courses
+                    {item.counter} Resources
                 </div>
                 <div className="relative z-2 text-h5 lg:text-h6">
                     {item.title}
@@ -35,4 +35,4 @@ const Courses = ({ items }: CoursesProps) => (
     </div>
 );
 
-export default Courses;
+export default Resources;

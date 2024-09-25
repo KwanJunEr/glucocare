@@ -3,14 +3,14 @@ import { Text, Card, RingProgress, Group, useMantineTheme } from '@mantine/core'
 import classes from './StatsRingCard.module.css';
 
 const stats = [
-  { value: 447, label: 'Remaining' },
-  { value: 76, label: 'In progress' },
+  { value: 35, label: 'Remaining' },
+  { value: 5, label: 'In progress' },
 ];
 
 export function StatsRingCard() {
  
-  const completed = 1887;
-  const total = 2334;
+  const completed = 10;
+  const total = 50;
   const items = stats.map((stat) => (
     <div key={stat.label}>
       <Text className={classes.label}>{stat.value}</Text>
@@ -25,11 +25,11 @@ export function StatsRingCard() {
       <div className={`flex flex-row space-x-5 ${classes.inner}`}>
         <div>
           <Text fz="xl" className={classes.label}>
-            Project tasks
+           Your Health Goal
           </Text>
           <div>
             <Text className={classes.lead} mt={30}>
-              1887
+            10
             </Text>
             <Text fz="xs" c="dimmed">
               Completed

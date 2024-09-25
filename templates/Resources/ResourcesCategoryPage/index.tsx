@@ -27,24 +27,20 @@ const ResourcesCategoryPage = () => {
             value: "duration",
         },
         {
-            title: "Subject",
-            value: "subject",
+            title: "Type of Resource",
+            value: "type",
         },
         {
-            title: "Skills",
-            value: "skills",
-        },
-        {
-            title: "Partner",
-            value: "partner",
+            title: "Topic",
+            value: "topic",
         },
     ];
 
     return (
-        <Layout title="Resources">
+        <Layout title="Diabetes Resources">
             <Search
                 className="mb-3.5 md:mb-6"
-                placeholder="Mobile and Web Development"
+                placeholder="Search diabetes tips or management guides"
                 value={search}
                 onChange={(e: any) => setSearch(e.target.value)}
                 onSubmit={() => console.log("Submit")}
