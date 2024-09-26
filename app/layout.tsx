@@ -18,7 +18,7 @@ import { SiGotomeeting ,SiChatbot} from "react-icons/si";
 import { FaUserDoctor ,FaPersonRunning} from "react-icons/fa6";
 import { PiBowlFoodFill } from "react-icons/pi";
 import { CgCommunity } from "react-icons/cg";
-import { RiCalendarFill, RiMentalHealthLine } from "react-icons/ri";
+import { RiCalendarFill, RiMentalHealthFill, RiMentalHealthLine } from "react-icons/ri";
 import { IoLibrary,IoSettings } from "react-icons/io5";
 import { IoMdHelpCircle } from "react-icons/io";
 import '@mantine/core/styles.css';
@@ -49,9 +49,6 @@ const sidebarMenuItems: MenuProps['items'] = [
       key:'ai' , icon:<SiChatbot/>, label: <Link href={'/consultation_advisory/ai_consultation'}>Gluco AI</Link>
       },
       {
-        key:'health_report' , icon:<TbReportMedical/>, label: <Link href={'/consultation_advisory/health_report_advice'}>Health Report Advice</Link>
-      },
-      {
         key:'doctor_consultation' , icon:<FaUserDoctor/>, label: <Link href={'/consultation_advisory/doctor_consultation'}>My Doctor</Link>
       },
       {
@@ -70,6 +67,9 @@ const sidebarMenuItems: MenuProps['items'] = [
       },
       {
         key:"events", icon:<RiCalendarFill />, label: <Link href = {'/community_support/events'} >Events </Link>
+      },
+      {
+        key:"mental_health", icon:<RiMentalHealthFill />, label: <Link href = {'/community_support/mental_health'} >Mental Health </Link>
       },
 
     ]
